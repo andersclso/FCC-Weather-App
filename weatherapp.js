@@ -10,14 +10,23 @@ $(document).ready(function() {
 
 				let ele = document.getElementById('icons');
 				let tempnum = document.getElementById('temp');
+				let status = results.weather[0].main;
 
-				ele.className = results.weather[0].main;
-
-				if (ele.className == 'Rain') {
-					document.body.style.background = '#9A9B94';
-				}
-				else if (ele.className == 'Clouds') {
-					document.body.style.background = '#A1D9EF'
+				switch (status) {
+					case 'Clouds':
+						document.body.style.background = '#A1D9EF';
+						ele.className = 'cloudy';
+						break;
+					case 'Drizzle':
+					case 'Rain':
+					case 'Mist':
+						document.body.style.background = '#9A9B94';
+						ele.className = 'rainy';
+						break;
+					default:
+						document.body.style.background = '#A1D9EF';
+						ele.className = 'cloudy';
+						break;
 				}
 
 				$("#tempunit").on("click", function() {
