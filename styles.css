@@ -174,10 +174,10 @@ template {
 
 /* ------------------------------------------------------------------------------ */
 /* SUNNY */
-.Clear {
+.sunny {
   -webkit-animation: sunny 15s linear infinite;
   animation: sunny 15s linear infinite;
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
@@ -188,8 +188,8 @@ template {
   left: 90px;
   top: 20px; }
 
-.Clear:before {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+.sunny:before {
+  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
@@ -204,7 +204,7 @@ template {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.Clear:after {
+.sunny:after {
   background: #FFEE44;
   border-radius: 50%;
   -webkit-box-shadow: rgba(255, 255, 0, 0.2) 0 0 0 15px;
@@ -233,13 +233,21 @@ template {
     transform: rotate(360deg); } }
 
 /* CLOUDY */
-.Clouds {
+.cloudy {
   -webkit-animation: cloudy 5s ease-in-out infinite;
   animation: cloudy 5s ease-in-out infinite;
   background: #FFFFFF;
   border-radius: 50%;
-  -webkit-box-shadow: #FFFFFF 65px -15px 0 -5px,  #FFFFFF 25px -25px,  #FFFFFF 30px 10px,  #FFFFFF 60px 15px 0 -10px,  #FFFFFF 85px 5px 0 -5px;
-  box-shadow: #FFFFFF 65px -15px 0 -5px,  #FFFFFF 25px -25px,  #FFFFFF 30px 10px,  #FFFFFF 60px 15px 0 -10px,  #FFFFFF 85px 5px 0 -5px;
+  -webkit-box-shadow: #FFFFFF 65px -15px 0 -5px, 
+ #FFFFFF 25px -25px, 
+ #FFFFFF 30px 10px, 
+ #FFFFFF 60px 15px 0 -10px, 
+ #FFFFFF 85px 5px 0 -5px;
+  box-shadow: #FFFFFF 65px -15px 0 -5px, 
+ #FFFFFF 25px -25px, 
+ #FFFFFF 30px 10px, 
+ #FFFFFF 60px 15px 0 -10px, 
+ #FFFFFF 85px 5px 0 -5px;
   height: 50px;
   width: 50px;
   margin-left: -60px;
@@ -247,7 +255,7 @@ template {
   left: 255px;
   top: 70px; }
 
-.Clouds:after {
+.cloudy:after {
   -webkit-animation: cloudy_shadow 5s ease-in-out infinite;
   animation: cloudy_shadow 5s ease-in-out infinite;
   background: #000000;
@@ -286,13 +294,21 @@ template {
     opacity: .05; } }
 
 /* RAINY */
-.Rain {
+.rainy {
   -webkit-animation: rainy 5s ease-in-out infinite 1s;
   animation: rainy 5s ease-in-out infinite 1s;
   background: #CCCCCC;
   border-radius: 50%;
-  -webkit-box-shadow: #CCCCCC 65px -15px 0 -5px,  #CCCCCC 25px -25px,  #CCCCCC 30px 10px,  #CCCCCC 60px 15px 0 -10px,  #CCCCCC 85px 5px 0 -5px;
-  box-shadow: #CCCCCC 65px -15px 0 -5px,  #CCCCCC 25px -25px,  #CCCCCC 30px 10px,  #CCCCCC 60px 15px 0 -10px,  #CCCCCC 85px 5px 0 -5px;
+  -webkit-box-shadow: #CCCCCC 65px -15px 0 -5px, 
+ #CCCCCC 25px -25px, 
+ #CCCCCC 30px 10px, 
+ #CCCCCC 60px 15px 0 -10px, 
+ #CCCCCC 85px 5px 0 -5px;
+  box-shadow: #CCCCCC 65px -15px 0 -5px, 
+ #CCCCCC 25px -25px, 
+ #CCCCCC 30px 10px, 
+ #CCCCCC 60px 15px 0 -10px, 
+ #CCCCCC 85px 5px 0 -5px;
   display: block;
   height: 50px;
   width: 50px;
@@ -301,7 +317,7 @@ template {
   left: 427px;
   top: 70px; }
 
-.Rain:after {
+.rainy:after {
   -webkit-animation: rainy_shadow 5s ease-in-out infinite 1s;
   animation: rainy_shadow 5s ease-in-out infinite 1s;
   background: #000000;
@@ -317,7 +333,7 @@ template {
   -ms-transform: scale(1);
   transform: scale(1); }
 
-.Rain:before {
+.rainy:before {
   -webkit-animation: rainy_rain .7s infinite linear;
   animation: rainy_rain .7s infinite linear;
   content: '';
@@ -410,8 +426,20 @@ template {
   -webkit-animation: rainbow 5s ease-in-out infinite;
   animation: rainbow 5s ease-in-out infinite;
   border-radius: 170px 0 0 0;
-  -webkit-box-shadow: #FB323C -2px -2px 0 1px, #F99716 -4px -4px 0 3px, #FEE124 -6px -6px 0 5px, #AFDF2E -8px -8px 0 7px, #6AD7F8 -10px -10px 0 9px, #60B1F5 -12px -12px 0 11px, #A3459B -14px -14px 0 13px;
-  box-shadow: #FB323C -2px -2px 0 1px, #F99716 -4px -4px 0 3px, #FEE124 -6px -6px 0 5px, #AFDF2E -8px -8px 0 7px, #6AD7F8 -10px -10px 0 9px, #60B1F5 -12px -12px 0 11px, #A3459B -14px -14px 0 13px;
+  -webkit-box-shadow: #FB323C -2px -2px 0 1px,
+ #F99716 -4px -4px 0 3px,
+ #FEE124 -6px -6px 0 5px,
+ #AFDF2E -8px -8px 0 7px,
+ #6AD7F8 -10px -10px 0 9px,
+ #60B1F5 -12px -12px 0 11px,
+ #A3459B -14px -14px 0 13px;
+  box-shadow: #FB323C -2px -2px 0 1px,
+ #F99716 -4px -4px 0 3px,
+ #FEE124 -6px -6px 0 5px,
+ #AFDF2E -8px -8px 0 7px,
+ #6AD7F8 -10px -10px 0 9px,
+ #60B1F5 -12px -12px 0 11px,
+ #A3459B -14px -14px 0 13px;
   height: 70px;
   width: 70px;
   margin-left: -40px;
@@ -523,8 +551,16 @@ template {
   animation: stormy 5s ease-in-out infinite;
   background: #222222;
   border-radius: 50%;
-  -webkit-box-shadow: #222222 65px -15px 0 -5px,  #222222 25px -25px,  #222222 30px 10px,  #222222 60px 15px 0 -10px,  #222222 85px 5px 0 -5px;
-  box-shadow: #222222 65px -15px 0 -5px,  #222222 25px -25px,  #222222 30px 10px,  #222222 60px 15px 0 -10px,  #222222 85px 5px 0 -5px;
+  -webkit-box-shadow: #222222 65px -15px 0 -5px, 
+ #222222 25px -25px, 
+ #222222 30px 10px, 
+ #222222 60px 15px 0 -10px, 
+ #222222 85px 5px 0 -5px;
+  box-shadow: #222222 65px -15px 0 -5px, 
+ #222222 25px -25px, 
+ #222222 30px 10px, 
+ #222222 60px 15px 0 -10px, 
+ #222222 85px 5px 0 -5px;
   height: 50px;
   width: 50px;
   margin-left: -70px;
@@ -634,8 +670,16 @@ template {
   animation: snowy 5s ease-in-out infinite 1s;
   background: #FFFFFF;
   border-radius: 50%;
-  -webkit-box-shadow: #FFFFFF 65px -15px 0 -5px,  #FFFFFF 25px -25px,  #FFFFFF 30px 10px,  #FFFFFF 60px 15px 0 -10px,  #FFFFFF 85px 5px 0 -5px;
-  box-shadow: #FFFFFF 65px -15px 0 -5px,  #FFFFFF 25px -25px,  #FFFFFF 30px 10px,  #FFFFFF 60px 15px 0 -10px,  #FFFFFF 85px 5px 0 -5px;
+  -webkit-box-shadow: #FFFFFF 65px -15px 0 -5px, 
+ #FFFFFF 25px -25px, 
+ #FFFFFF 30px 10px, 
+ #FFFFFF 60px 15px 0 -10px, 
+ #FFFFFF 85px 5px 0 -5px;
+  box-shadow: #FFFFFF 65px -15px 0 -5px, 
+ #FFFFFF 25px -25px, 
+ #FFFFFF 30px 10px, 
+ #FFFFFF 60px 15px 0 -10px, 
+ #FFFFFF 85px 5px 0 -5px;
   display: block;
   height: 50px;
   width: 50px;
